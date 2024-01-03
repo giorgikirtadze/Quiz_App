@@ -1,38 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+
 .App {
-  text-align: center;
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 15px 8px;
+    background-color: rgb(24, 24, 48);
+    border-radius: 6px;
+}
+.hr1{
+    width: 150px;
+    margin: auto;
+}
+.questionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Quiz {
+    font-size: 25px;
+    text-align: center;
+}
+.questionCount {
+    display: flex;
+    justify-content: space-between;
+}
+.questionText {
+    font-size: 25px;
+    height: 90px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.questionAnswerSection {
+    display: flex;
+    /* border: 1px solid; */
+    flex-direction: column;
+    gap: 15px;
+}
+.answerbox {
+    border-radius: 60px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+.answerCount {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 20px;background-color: rgb(132, 37, 176);
+    cursor: pointer;
+}
+.answerTexts {
+    font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ///////////////////////// */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.youScore {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.img {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quizCompleted {
+    font-size: 26px;
+    color: rgb(83, 36, 195);
+}
+.quizAttempt {
+    text-align: center;
+    margin: auto;
+    width: 280px;
+}
+.succesfully {
+    color: bisque;
+}
+.quizAttemptQuestions {
+    color: rgb(98, 30, 192);
+    font-size: 22px;
+}
+.quizAttemptAnswer {
+    color: rgb(12, 120, 12);
+    font-size: 22px;
 }
